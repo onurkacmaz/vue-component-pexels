@@ -1,28 +1,23 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <div class="container-fluid mt-4">
+      <input type="text" class="form-control" placeholder="Bir şeyler yaz.." v-model="keyword">
+      <Photos :keyword="keyword" :perPage="80" :page="1"></Photos>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import Photos from '@/components/Photos.vue'
 export default {
   name: 'App',
   components: {
-    HelloWorld
-  }
+    Photos
+  },
+  data() {
+    return {
+      keyword: null
+    }
+  },
 }
 </script>
-
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
