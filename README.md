@@ -1,4 +1,4 @@
-# pexels
+# VUE COMPONENT DEMO WITH PEXELS
 
 ## Project setup
 ```
