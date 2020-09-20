@@ -4,8 +4,8 @@
       <img class="card-img-top img-fluid" :src="photo.src.tiny" alt="Card image cap">
       <div class="card-body">
         <h5 class="card-title">{{ photo.photographer }}</h5>
-        <a target="_blank" :href="photo.photographer_url" class="btn btn-outline-primary col-12 mb-2">Fotoğrafa Git</a>
-        <a target="_blank" :href="photo.url" class="btn btn-outline-secondary col-12">Fotoğrafçıya Git</a>
+        <a target="_blank" :href="photo.url" class="btn btn-outline-primary col-12 mb-2">Fotoğrafa Git</a>
+        <a target="_blank" :href="photo.photographer_url" class="btn btn-outline-secondary col-12">Fotoğrafçıya Git</a>
       </div>
     </div>
   </div>
